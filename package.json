@@ -1,0 +1,14 @@
+{
+  "name": "webduct-1",
+  "version": "0.0.0",
+  "description": "Packages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "serve": "^1.4.0"
+  }
+}
