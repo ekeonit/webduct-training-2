@@ -100,3 +100,11 @@ body {
   font-weight: 100;
   color: grey;
 }
+
+.widget {
+  text-align: center;
+}
+
+.widget p {
+  font-size: 25px;
+}
