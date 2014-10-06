@@ -1,0 +1,11 @@
+{
+    "id": "Dish-Antenna",
+    "name": "Dish Antenna",
+    "description": "Zonec id elit non mi porta gravida at eget metus.",
+    "imageSrc": "Dish-Antenna-256.png",
+    "cost": 45,
+    "features": [
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc finibus ex non est iaculis, vitae aliquam tortor pulvinar. Etiam condimentum ornare velit, vitae aliquam lectus tincidunt accumsan. In vel posuere libero. In auctor lectus at accumsan porta. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque commodo diam at libero gravida dignissim. Curabitur quis consectetur ipsum.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac rutrum quam. Vivamus in metus tortor. Suspendisse ac metus faucibus, viverra tellus ac, fringilla arcu. Aliquam quam elit, convallis ac ornare quis, posuere nec augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat sodales ornare. Fusce congue eu odio ut interdum. Maecenas malesuada consectetur ante, et bibendum turpis cursus id. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed lacinia placerat tellus quis consectetur. Integer ut lorem iaculis, fringilla leo eget, bibendum leo. Vestibulum iaculis, sem id pellentesque convallis, leo urna dignissim metus, eu congue urna metus quis dolor. Integer blandit sagittis odio eget auctor."
+    ]
+}
