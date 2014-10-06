@@ -10,13 +10,13 @@
     </div>
     <div class="jumbotron">
         <h1>Amazing Widgets</h1>
-        <p class="load">Name</p>
+        <p class="load">{{widget.name}}</p>
     </div>
     <div class="col-lg-12 widget">
-        <p>Description</p>
-        <img src=""/>
-        <p>$99999
-        <h2>Features</h2>
-        <p>A feature</p>
+        <p>{{widget.description}}</p>
+        <img ng-src="images/{{widget.imageSrc}}" />
+        <p>${{widget.cost}}
+            <h2>Features</h2>
+            <p ng-repeat="feature in widget.features">{{feature}}</p>
     </div>
 </div>
