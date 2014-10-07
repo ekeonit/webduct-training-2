@@ -8,27 +8,15 @@
         </ul>
         <h3 class="text-muted">Amazing Widgets</h3>
     </div>
-    <div class="jumbotron">
-        <h1>Amazing Widgets</h1>
-        <p class="load">Check out our amazing collection of widgets</p>
-    </div>
+    <widget-jumbotron></widget-jumbotron>
     <div class="col-lg-12 widgets-list">
-        Filter: <input ng-model="search"/>
-        Order By:
+        Filter:
+        <input ng-model="search" />Order By:
         <select ng-model="orderByField">
             <option value="name">Name</option>
             <option value="description">Description</option>
             <option value="cost">Cost</option>
         </select>
-        <div class="widgets-list-item" ng-repeat="widget in widgets | filter: search | orderBy : orderByField">
-            <h4>{{ widget.name }}</h4>
-            <img ng-src="images/{{ widget.thumbNailSrc }}" />
-            <p>{{ widget.description }}</p>
-            <p>${{ widget.cost }}</p>
-            <p><a href="#/details/{{ widget.id }}">Details</a></p>
-        </div>
-        <div style="text-align:centre" ng-click="onClickAboutUs()">
-            <span>About us</span>
-        </div>
+        <widget-list-item widget="widget" ng-repeat="widget in widgets | filter: search | orderBy : orderByField"></widget-list-item>
     </div>
 </div>

@@ -17,6 +17,6 @@
         <img ng-src="images/{{widget.imageSrc}}" />
         <p>${{widget.cost}}
             <h2>Features</h2>
-            <p ng-repeat="feature in widget.features">{{feature}}</p>
+            <p ng-repeat="feature in widget.features"><snippet words="10" text="{{feature}}"></snippet></p>
     </div>
 </div>

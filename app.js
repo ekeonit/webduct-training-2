@@ -47,3 +47,55 @@ app.controller('WidgetsController', ['$scope', '$http', '$location',
         };
     }
 ]);
+
+app.directive('widgetJumbotron', function() {
+    return {
+        restrict: 'EA',
+        templateUrl: 'jumbotron.html'
+    };
+});
+
+app.directive('widgetListItem', function() {
+    return {
+        restrict: 'EA',
+        templateUrl: 'widget-list-item.html',
+        scope: {
+            widget: '='
+        }
+    }
+});
+
+app.directive('snippet', function() {
+    return {
+        restrict: 'E',
+        scope: {
+        },
+        template: '{{snippet}} <a ng-click="toggleExpanded()">{{ isExpanded ? "[Less]" : "[More]" }}</a>',
+        link: function(scope, element, attrs) {
+
+            scope.isExpanded = false;
+            scope.snippet = '';
+
+            attrs.$observe('text', function(value) {
+                update();
+            });
+
+            scope.toggleExpanded = function() {
+                scope.isExpanded = !scope.isExpanded;
+                update();
+            }
+
+            function update() {
+                var numWords = parseInt(attrs.words);
+                var split = attrs.text.split(" ");
+                if (scope.isExpanded || split.length <= numWords) {
+                    scope.snippet = attrs.text;
+                } else {
+                    var snipped = split.slice(0, numWords);
+                    var joined = snipped.join(" ");
+                    scope.snippet = joined + ' ...';
+                }
+            }
+        }
+    }
+});
